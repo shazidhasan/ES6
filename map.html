@@ -1,0 +1,169 @@
+<html>
+
+<head>
+   
+    <script type="text/javascript">
+
+        let test = [1,2,3,4,5];
+
+        //Mapping 
+
+        test.map((val,i)=>{
+            console.log(val + ':' + i);
+        });
+
+
+        //for of 
+
+        for(var value of test)
+        {
+
+            console.log(value);
+        }
+
+
+
+        class Person
+        {
+            constructor (name) 
+            {
+                this.Name = name;
+            }
+        }
+
+
+        const shazid = new Person('Shazid');
+        const Arefin = new Person('Arefin');
+        const Sadikul = new Person('Sadikul');
+
+        
+
+        console.log(shazid.Name);
+        console.log(Arefin.Name);
+        console.log(Sadikul.Name);
+
+
+
+
+        //Default 
+
+        function DefaultTest(x,y=12)
+        {
+
+            console.log(x+y);
+        }
+
+
+        DefaultTest(5);
+
+
+        //Rest
+
+        function RestTest(x,...test)
+        {
+
+            console.log(x*test.length);
+        }
+
+        RestTest(5,[7,8],[5,6]);
+
+
+        
+        //Spread 
+
+        function SpreadTest(x,test,testa,testan)
+        {
+
+            console.log(x*test);
+        }
+
+        SpreadTest(...[7,8,5,6]);
+
+
+
+        //problems with var 
+        var greeter = "hey hi";
+        var times = 4;
+
+        if (times > 3) {
+            var greeter = "say Hello instead"; 
+        }
+        
+        console.log(greeter) // "say Hello instead"
+
+
+        //same variable can be declared many times
+
+        var greeting = "say Hi";
+        var greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared
+
+        console.log(greeting);
+
+
+    //     const greeting = "say Hi";
+    // greeting = "say Hello instead";// error: Assignment to constant variable. 
+
+
+    var HITObujh = function (){
+
+        Number:5;
+        JobsPermanent:false;
+
+        function SayHello(){
+            console.log('we are fine');
+        }
+    }
+
+
+    // var HITObujhObj = new HITObujh();
+    // HITObujhObj.SayHello();
+
+
+
+    let p = new Promise((resolve,reject)=>{
+
+        let a = 1;
+        let b = 2;
+        if(a+b === 3)
+            resolve('Succedded');
+        reject('error');
+    });
+
+
+
+
+    p.then((message)=>{
+
+        console.log('resolved')
+
+    }).catchg((error)=>{
+
+        console.log(error);
+    })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+
+</html>
